@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: theme("colors.white");
+  background: theme("colors.black");
+}
+
+@layer components {
+  .btn {
+    @apply block bg-white px-2 py-1 rounded-md text-zinc-800 text-sm hover:opacity-75 transition;
+  }
+}
